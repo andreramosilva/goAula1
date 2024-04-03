@@ -58,6 +58,9 @@ func cat(quantity int) float64 {
 func main() {
 	animalDog, msg := Animal("dog")
 	animalCat, msg := Animal("cat")
+	if msg != "" {
+		return
+	}
 
 	var amount float64
 
