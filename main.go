@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"os"
 )
 
 func main() {
@@ -13,15 +12,22 @@ func main() {
 	// horas := 20
 	// print(horas)
 
-	files, err := os.ReadDir(".")
-	if err != nil {
-		fmt.Println(err)
-	}
-	data, err := os.ReadFile("./README.md")
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(files)
-	fmt.Println(data)
+	// files, err := os.ReadDir(".")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	// data, err := os.ReadFile("./README.md")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	// fmt.Println(files)
+	// fmt.Println(data)
+
+	var v int = 19
+	var p *int
+
+	p = &v
+	fmt.Println(p)
+	fmt.Println(*p)
 
 }
