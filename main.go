@@ -166,4 +166,5 @@ func main() {
 	}
 
 	fmt.Println(err)
+	panic("Erro inesperado")
 }
